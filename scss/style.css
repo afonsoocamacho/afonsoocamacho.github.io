@@ -1,0 +1,392 @@
+/*arnaiz*/
+@font-face {
+  font-family: arnaiz;
+  src: url(../fonts/Arnaiz.otf) format("opentype");
+}
+/*Helvetica*/
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-ThinIta.ttf) format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../fonts/font/HelveticaNowDisplay-BoldIta.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../fonts/font/HelveticaNowDisplay-RegIta.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-ExtLtIta.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-MedIta.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../fonts/font/HelveticaNowDisplay-ExtLt.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-ExtBlk.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-ExtBdIta.ttf) format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../fonts/font/HelveticaNowDisplay-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-ExtBlkIta.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-Thin.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../fonts/font/HelveticaNowDisplay-LightIta.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url(../font/HelveticaNowDisplay-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-HairlineI.ttf) format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../fonts/font/HelveticaNowDisplay-BlackIta.ttf) format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvitica;
+  src: url(../font/HelveticaNowDisplay-Hairline.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@media screen and (orientation: landscape) {
+  #divBlock {
+    display: none;
+  }
+}
+@media screen and (orientation: portrait) {
+  #divBlock {
+    display: block;
+  }
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.3;
+  background-color: black;
+  color: #f9f8f9;
+  font-family: sans-serif;
+  font-size: 1.125em;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: #f9f8f9;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.blocker {
+  min-height: 100dvh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: 9999;
+  pointer-events: none;
+  transition: ease-out 0.5s;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  place-items: center;
+}
+.blocker img {
+  max-height: 10vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blocker .result {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  max-height: 5em;
+  cursor: pointer;
+  margin-left: 50px;
+  transition: transform 0.4s ease;
+  transform-origin: center center;
+}
+.logo:hover {
+  transform: rotate(180deg);
+}
+@media (max-width: 95.625em) {
+  .logo {
+    padding: 0 0px;
+  }
+}
+
+.header__nav {
+  padding-bottom: 40px;
+}
+.header__hamburger {
+  padding-top: 0.8em;
+  cursor: default;
+}
+.header__links {
+  font-family: helvitica;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 2.3em;
+}
+@media (max-width: 77.5em) {
+  .header__links {
+    padding-left: 38%;
+  }
+}
+.header__links ul {
+  list-style-type: none;
+  font-size: 1.2em;
+  width: 100%;
+  padding: 0 50px;
+  align-items: center;
+  text-transform: uppercase;
+}
+@media (max-width: 77.5em) {
+  .header__links ul {
+    padding: 0 10px;
+  }
+}
+.header__links ul li a:hover {
+  font-style: italic;
+}
+.header__video {
+  min-height: 100dvh;
+  background-color: black;
+  position: relative;
+  cursor: pointer;
+}
+.header__video .play {
+  max-height: 100px;
+  display: block;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__date {
+  padding: 0 50px;
+  font-weight: 500;
+}
+
+.info {
+  font-family: sans-serif;
+  color: #f9f8f9;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: default;
+}
+.info:hover {
+  font-style: italic;
+}
+
+.why {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.why p {
+  text-align: justify;
+  max-width: 650px;
+  display: inline-block;
+}
+.why h1:not(:first-of-type) {
+  /* Your styles for h1 elements, excluding the first one, go here */
+  margin-top: 100px; /* Just an example; replace with your desired styles */
+}
+
+.date {
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* Change background color as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loader {
+  animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaded .preloader {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.jump-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.jump-btn:hover {
+  background-color: #23527c;
+}
+
+.alert {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.video-ended .alert {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

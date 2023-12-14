@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the dynamic relationship with smartphones on our interactive journey. Uncover the friend and foe dynamics of smartphone usage, delving into its impact on life, health, and relationships. Join the conversation on balance, mindfulness, and responsible tech integration in the digital age.">
+    <meta name="keywords" content="Smartphone usage, Digital wellness, Interactive video experience, Technology impact, Mindfulness in the digital age, Smartphone effects on mental health, Balancing tech and life, Social connection and technology, Friends and Foe, World Problem Project, WPP">
+    <title>CAUGHT IN THE WEB</title>
+    <link rel="shortcut icon" href="img/world-wide-web.png" type="image/x-icon">
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="preloader" id="preloader"><img class="loader" id="loader" src="img/world-wide-web.png" alt=""></div>
+    <div class="blocker" id="divBlock">
+        <img src="img/phone.png" alt="rotate device">
+        <p class ="result" id="result"></p>
+    </div>
+
+    <header class="header" id="Home">
+        <nav class="header__nav flex flex-jc-c">
+            <div class="header__links  flex flex-jc-sb flex-jc-c flex-ai-c ">
+                <a href="index.html"><img src="img/world-wide-web.png" alt="web logo" class="logo"></a>
+                <ul class=" flex-ai-c">
+                    <li><a href="index.html" style="font-style: italic;">Home</a></li>
+                    <li><a href="why.html">Why</a></li>
+                    <li><a href="https://www.nhlstenden.com/en/courses/communication-multimedia-design" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a href="https://player.hihaho.com/a7987ffe-14ef-4081-abf9-52ba976abbf5" target="_blank">
+        <div id="video" onclick="scrollToDiv()" class="header__video">
+        
+                <img class="play" src="img/play-2.png" alt="">
+        </div>
+
+        </a>
+  <!-- Add more buttons as needed -->
+        <div class="header__date flex flex-jc-sb">
+            <p class="info" id="digital-clock"></p>
+            <p class="info" id="timeSinceOpen"></p>
+            <p class="info" id="timePercentage"></p>
+            <p class="info" id="screenTimeData">Loading...</p>
+
+        </div>
+    </header>
+<script src="scripts/date.js"></script>
+<script src="scripts/screentime.js"></script>
+<script src="scripts/mobile_device.js"></script>
+<script src="scripts/video_buttons.js"></script>
+<script src="scripts/buttons.js"></script>
+</body>
+</html>         
